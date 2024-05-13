@@ -1,0 +1,331 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  :root{
+    --main-color: #00555a;
+    --text-color: white;
+  }
+  
+  header {
+    background-color:var(--main-color);
+   padding: 8px 85px 10px 55px ;
+   
+
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+  }
+  .fan-text {
+    font-size: 42px;
+    color:var(--text-color);
+    font-weight: bold;
+}
+.navbar img {
+    width: 60px; 
+    height: auto;
+    animation: spin 2s linear infinite;
+    
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg); 
+    }
+    to {
+        transform: rotate(360deg); 
+    }
+}
+.search-bar{
+    margin-left: auto;
+    padding-left: 15px;
+    width: 570px;
+    height: 45px;
+    border: 1px solid black;
+    border-radius: 50px;
+    background-color: white;
+}
+  .search-bar input[type="text"] {
+    padding: 10px;
+    width: 520px;
+  border: none;
+   outline: none;
+    background-color: transparent;
+    font-size: 16px;
+  }
+  .fa-solid{
+    color: black;
+    cursor: pointer;
+  }
+
+  
+  /* Media queries for responsive design */
+  @media screen and (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+    }
+    .search-bar {
+      margin-top: 10px;
+    }
+  }
+  @media (max-width: 480px) {
+   .navbar{
+    flex-direction: column;
+   }
+    .search-bar {
+      margin-left: 10px; 
+      width:350px ;
+    }
+  
+    .search-bar input[type="text"] {
+      font-size: 12px;
+      width: 300px;
+    }
+  }
+
+
+
+
+  .navbar2{
+    padding-top: 5px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+justify-content: center;
+   
+   
+  }
+  
+  .nav-links li {
+    margin-right: 30px; 
+  }
+  
+  .nav-links li a {
+    color:var(--text-color);
+    text-decoration: none;
+    font-size: 18px;
+    transition:  0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    text-decoration: underline;
+    background-color: rgba(255, 255, 255, 0.47);
+    
+    padding: 10PX;
+  }
+
+  
+  
+  /* Media Queries for Tablet */
+  @media (max-width: 768px) {
+    .nav-links {
+      flex-direction: column; 
+      align-items: center;
+    }
+  
+    .nav-links li {
+      margin: 10px 0;
+    }
+  }
+  
+  /* Media Queries for Mobile */
+  @media (max-width: 480px) {
+    .navbar2 {
+      padding-top: 10px; 
+    }
+  
+    .nav-links li {
+      margin: 8px 0; 
+    }
+  }
+  
+
+
+
+
+
+.pic-contanier{
+    position: relative;
+   text-align: center;
+   background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(Pedestal-Fans-Category-Banner.jpg);
+  height: 600px;
+  }
+
+.text-container h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 40px;
+}
+
+
+
+.icon-row{
+  padding: 60px 70px 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.icon1{
+  display: flex;
+}
+.icon1 img{
+  width: 60px;
+  height: auto;
+}
+.icon-text{
+  font-size: 18px;
+  color: #092337;
+  padding: 10px;
+}
+
+
+
+ /* Media Queries for Mobile */
+ @media (max-width: 480px) {
+  .icon-row{
+   flex-direction: column;
+  }
+}
+
+
+
+.table-fan-intro{
+  height: 250px;
+  text-align: center;
+  margin: 0 auto;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 4s ease; 
+}
+.table-fan-intro.show {
+  opacity: 1; /* Visible */
+}
+.table-fan-intro h1{
+ color: var(--main-color);
+  font-size: 62px;
+  
+} .table-fan-intro p{
+  line-height: 2rem;
+  padding-top: 10px;
+  font-size: 20px;
+}
+@media screen and (max-width: 768px) {
+
+  .table-fan-intro h1{
+    font-size: 40px;
+  }
+  .table-fan-intro p{
+    font-size: 18px;
+  }
+}
+
+
+
+.row
+{
+  
+   display: flex;
+   justify-content: space-evenly;
+padding: 50px 70px;
+ background-color: rgb(220, 215, 215);
+ margin: 0px 30px 0px 30px;
+}
+.row2
+{
+   display: flex;
+   justify-content: space-evenly;
+padding: 8px 70px;
+background-color: rgb(220, 215, 215);
+ margin: 0px 30px 0px 30px;
+ 
+   
+
+}
+/* card section of seiling fan */
+
+
+.column3{
+   
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+
+}
+.column3:hover{
+  box-shadow: 4px 8px 10px 4px rgb(154, 152, 152);
+}
+.column3 img{
+    width: 100%;
+    height: 350px;
+    display: block;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transition: 0.1s linear;
+
+}
+.layer:hover {
+    background: rgba(13, 105, 167, 0.699);
+}
+.layer a{
+    width: 100%;
+     font-weight: 500;
+     font-size: 25px;
+     color: #fff;
+     position: absolute;
+     transform: translatex(-50%);
+     bottom: 0;
+     left: 80%;
+   
+     transition: 0.5s linear ;
+     opacity: 0;
+ 
+     text-decoration: none;
+     /* s */
+     
+}
+.layer:hover a{
+    bottom: 49%;
+    opacity: 1;
+  
+ 
+
+}
+.text h3{
+  font-size: 24px;
+}
+.text p{
+  font-size: 18px;
+  line-height: 2rem;
+}
+.text i{
+  color: rgb(217, 144, 9);
+  font-size: 18px;
+}
+
+
+@media(max-width:768px)
+{
+    .row{
+        flex-direction: column;
+    }
+ 
+
+}
